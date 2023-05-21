@@ -34,6 +34,9 @@
 @import url(../blocks/photo-grid/photo-grid.css);
 @import url(../blocks/photo-grid/__item/photo-grid__item.css);
 
+/* hover */
+@import url(../blocks/link-hover/link-hover.css);
+
 /* places */
 @import url(../blocks/places/places.css);
 @import url(../blocks/place/place.css);
@@ -56,4 +59,6 @@
 @import url(../blocks/footer/__links/footer__links.css);
 @import url(../blocks/footer/__link/footer__link.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
+
+
 

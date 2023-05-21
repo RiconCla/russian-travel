@@ -7,4 +7,5 @@
     text-decoration-line: underline;
     color: #FFFFFF;
     max-width: 456px;
+    transition: .3s;
 }
