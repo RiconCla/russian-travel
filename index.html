@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./page/index.css" type="text/css">
+    <link rel="stylesheet" href="./pages/index.css" type="text/css">
     <title>Путешествия по России</title>
 </head>
 <body class="page">
     <header class="header">
         <img class="header__logo" alt="Лого" src="./image/logo/__logo.svg">
         <ul class="header__lang-links">
-            <li><a class="header__lang-link header__lang-link_active" href="#">Ru</a></li>
-            <li><a class="header__lang-link" href="#">En</a></li>
+            <li><a class="header__lang-link header__lang-link_active link-hover" href="#">Ru</a></li>
+            <li><a class="header__lang-link link-hover" href="#">En</a></li>
         </ul>
     </header>
     <main class="content">
@@ -42,7 +42,7 @@
                 <li>Аэропортов <span class="intro__list-num">241</span></li>
             </ol>
         </section>
-        <section class="photo-grid">
+        <section class="photo-grid" aria-label="photo">
             <img class="photo-grid__item" src="./image/photo-grid/photo-grid-train.jpg" alt="Поезд">
             <img class="photo-grid__item" src="./image/photo-grid/photo-grid-atharva-tulsi.jpg" alt="Облака">
             <img class="photo-grid__item" src="./image/photo-grid/photo-grid-tuman.jpg" alt="Туман">
@@ -56,12 +56,12 @@
             <img class="photo-grid__item" src="./image/photo-grid/photo-grid-baikal-2.jpg" alt="Вид на Байкал">
             <img class="photo-grid__item" src="./image/photo-grid/photo-grid-ergaki.jpg" alt="Ергаки">
         </section>
-        <section class="places">
+        <section class="places" aria-label="places">
             <article class="place">
                 <h2 class="place__title">Куршская коса</h2>
                 <img class="place__image" alt="Коса" src="./image/places/place-kosa.jpg">
                 <div class="place__website">
-                    <p class="place__url">URL</p>
+                    <p class="place__url">url</p>
                     <a class="place__link link-hover" href="https://park-kosa.ru/" target="_blank">park-kosa.ru</a>
                 </div>
                 <div class="place__text">
@@ -77,7 +77,7 @@
                 <h2 class="place__title">Кольский</h2>
                 <img class="place__image" alt="Кольский" src="./image/places/place-kolsky.jpg">
                 <div class="place__website">
-                    <p class="place__url">URL</p>
+                    <p class="place__url">url</p>
                     <a class="place__link link-hover" href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" target="_blank">National Geographic</a>
                 </div>
                 <div class="place__text">
@@ -93,7 +93,7 @@
                 <h2 class="place__title">Алтай</h2>
                 <img class="place__image" alt="Алтай" src="./image/places/place-altai.jpg">
                 <div class="place__website">
-                    <p class="place__url">URL</p>
+                    <p class="place__url">url</p>
                     <a class="place__link link-hover" href="https://www.youtube.com/watch?v=7ZEsoV7kWAQ" target="_blank">YouTube</a>
                 </div>
                 <div class="place__text">
@@ -109,7 +109,7 @@
                 <h2 class="place__title">Зимний Байкал</h2>
                 <img class="place__image" alt="Байкал" src="./image/places/place-winter-baikal.jpg">
                 <div class="place__website">
-                    <p class="place__url">URL</p>
+                    <p class="place__url">url</p>
                     <a class="place__link link-hover" href="https://vk.com/baikalmile" target="_blank">https://vk.com/baikalmile</a>
                 </div>
                 <div class="place__text">
@@ -124,7 +124,7 @@
                 <h2 class="place__title">Карелия</h2>
                 <img class="place__image" alt="Карелия" src="./image/places/place-karelia.jpg">
                 <div class="place__website">
-                    <p class="place__url">URL</p>
+                    <p class="place__url">url</p>
                     <a class="place__link link-hover" href="http://vodlozero.ru/" target="_blank">http://vodlozero.ru/</a>
                 </div>
                 <div class="place__text">
@@ -144,23 +144,25 @@
         </section>
     </main>
     <footer class="footer">
-        <ul class="footer__links">
-            <li>
-                <a class="footer__link link-hover" href="https://yandex.ru/maps" target="_blank">Карты</a>
-            </li>
-            <li>
-                <a class="footer__link link-hover" href="https://yandex.ru/pogoda" target="_blank">Погода</a>
-            </li>
-            <li>
-                <a class="footer__link link-hover" href="https://rasp.yandex.ru" target="_blank">Расписание</a>
-            </li>
-            <li>
-                <a class="footer__link link-hover" href="https://calendar.yandex.ru" target="_blank">Календарь</a>
-            </li>
-            <li>
-                <a class="footer__link link-hover" href="https://travel.yandex.ru" target="_blank">Путешествия</a>
-            </li>
-        </ul>
+        <nav>
+            <ul class="footer__links">
+                <li>
+                    <a class="footer__link link-hover" href="https://yandex.ru/maps" target="_blank">Карты</a>
+                </li>
+                <li>
+                    <a class="footer__link link-hover" href="https://yandex.ru/pogoda" target="_blank">Погода</a>
+                </li>
+                <li>
+                    <a class="footer__link link-hover" href="https://rasp.yandex.ru" target="_blank">Расписание</a>
+                </li>
+                <li>
+                    <a class="footer__link link-hover" href="https://calendar.yandex.ru" target="_blank">Календарь</a>
+                </li>
+                <li>
+                    <a class="footer__link link-hover" href="https://travel.yandex.ru" target="_blank">Путешествия</a>
+                </li>
+            </ul>
+        </nav>
         <p class="footer__copyright">© 2023. Дашкин Артем</p>
     </footer>
 </body>
